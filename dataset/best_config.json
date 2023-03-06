@@ -1,0 +1,83 @@
+{
+    "FLOOR": {
+        "method": "adaptive_gaussian",
+        "params": {
+            "blur_window": 5.0,
+            "blur_sigma": 1.0,
+            "ksize_erode": 1,
+            "iterations_erode": 1,
+            "ksize_dilate": 1,
+            "iterations_dilate": 2,
+            "method_params": {
+                "c": -15,
+                "w": 21
+            }
+        }
+    },
+    "CAR": {
+        "method": "otsu",
+        "params": {
+            "blur_window": 5.0,
+            "blur_sigma": 1.0,
+            "ksize_erode": 1,
+            "iterations_erode": 1,
+            "ksize_dilate": 1,
+            "iterations_dilate": 1,
+            "method_params": {}
+        }
+    },
+    "LINE": {
+        "method": "adaptive_gaussian",
+        "params": {
+            "blur_window": 5.0,
+            "blur_sigma": 1.0,
+            "ksize_erode": 1,
+            "iterations_erode": 0,
+            "ksize_dilate": 1,
+            "iterations_dilate": 1,
+            "method_params": {
+                "c": -15,
+                "w": 21
+            }
+        }
+    },
+    "CURB": {
+        "method": "adaptive_gaussian",
+        "params": {
+            "blur_window": 5.0,
+            "blur_sigma": 1.0,
+            "ksize_erode": 1,
+            "iterations_erode": 0,
+            "ksize_dilate": 1,
+            "iterations_dilate": 1,
+            "method_params": {
+                "c": -15,
+                "w": 11
+            }
+        }
+    },
+    "MIRROR": {
+        "method": "otsu",
+        "params": {
+            "blur_window": 5.0,
+            "blur_sigma": 1.0,
+            "ksize_erode": 1,
+            "iterations_erode": 1,
+            "ksize_dilate": 1,
+            "iterations_dilate": 2,
+            "method_params": {}
+        }
+    },
+    "OTHER": {
+        "method": "otsu",
+        "params": {
+            "blur_window": 5.0,
+            "blur_sigma": 1.0,
+            "ksize_erode": 1,
+            "iterations_erode": 0,
+            "ksize_dilate": 1,
+            "iterations_dilate": 1,
+            "method_params": {}
+        }
+    }
+}

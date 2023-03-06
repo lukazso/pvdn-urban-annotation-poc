@@ -1,0 +1,12 @@
+venv
+data
+__pycache__
+*.egg*
+.vscode
+
+wandb
+vision
+ai4od-semseg-poc-paper
+
+out
+build

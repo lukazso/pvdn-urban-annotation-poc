@@ -1,0 +1,8 @@
+pytorch-lightning
+wandb
+opencv-python
+pandas
+matplotlib
+scikit-image
+segmentation-models-pytorch
+tabulate
