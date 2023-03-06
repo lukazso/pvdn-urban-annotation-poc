@@ -19,7 +19,6 @@ from pytorch_lightning.callbacks import ModelCheckpoint, LearningRateMonitor
 import segmentation_models_pytorch as smp
 
 from training.dataset import SemanticDataModule, calculate_class_weights
-from training.loss import FocalLoss2d
 from training.metrics import SemanticMetrics
 from training.filters import EmptyFilter
 
