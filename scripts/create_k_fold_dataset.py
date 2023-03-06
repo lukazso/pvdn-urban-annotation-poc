@@ -22,8 +22,8 @@ def filter_num_annotators(data_dir, scenes, n_annots: int = 2):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("--data-dir", type=str, default="/raid/datasets/ai4od/semseg-poc-paper/original")
-    parser.add_argument("--out-dir", type=str, default="/raid/datasets/ai4od/semseg-poc-paper/5-fold")
+    parser.add_argument("--data-dir", type=str)
+    parser.add_argument("--out-dir", type=str)
     parser.add_argument("--k", type=int, default=5)
     parser.add_argument("--test-size", type=float, default=0.0)
 

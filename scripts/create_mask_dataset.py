@@ -67,10 +67,10 @@ def create_mask_dataset(dataset: AI4ODDataset, mask_subdir: str, pipeline: Multi
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--param-path", type=str, default="/home/lukas/Development/pycharm-sync/ai4od/ai4od-annotation-poc/dataset/best_config.json")
-    parser.add_argument("--data-dir", type=str, default="/raid/datasets/ai4od/semseg-poc-paper/original")
+    parser.add_argument("--param-path", type=str)
+    parser.add_argument("--data-dir", type=str)
     parser.add_argument("--mask-subdir", type=str, default="masks/majority-best-params")
-    parser.add_argument("--aggregation", type=str, default="intersection", choices=("intersection", "union", "majority"))
+    parser.add_argument("--aggregation", type=str, default="majority", choices=("intersection", "union", "majority"))
     
     args = parser.parse_args()
 

@@ -76,13 +76,3 @@ def jaccard(boxes: List) -> float:
 
     iou = intersection / union
     return iou
-
-
-if __name__ == "__main__":
-    boxes = [
-        [10, 10, 20, 20], 
-        [10, 10, 15, 15]
-    ]
-
-    iou = jaccard(boxes)
-    print(iou)

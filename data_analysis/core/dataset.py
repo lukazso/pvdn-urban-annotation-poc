@@ -108,9 +108,3 @@ class AI4ODDataset(Dataset):
             scene_dir = os.path.join(dst_dir, scene_name)
             os.makedirs(scene_dir, exist_ok=True)
             scene.export(scene_dir)
-            
-
-if __name__ == "__main__":
-    dataset = AI4ODDataset(path="/raid/datasets/ai4od/semseg-poc-paper/original-anonymized-filtered-types")
-    a = 0
- 

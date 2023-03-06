@@ -25,10 +25,10 @@ def make_overlay(img, mask):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("--val-dir", "-v", type=str, default="/raid/datasets/ai4od/semseg-poc-paper/original")
+    parser.add_argument("--val-dir", "-v", type=str)
     parser.add_argument("--annot-subdir", "-a", type=str, default="masks/majority-best-params")
-    parser.add_argument("--ckpt-path", "-c", type=str, default="/home/lukas/Development/pycharm-sync/ai4od/ai4od-annotation-poc/out/0/new-masks-majority-resnet50_0_2023-02-25_20-50-29/model/epoch=199-step=39200.ckpt")
-    parser.add_argument("--out-dir", "-o", type=str, default="../out/0/resnet50/inference_visualizations/no_empty_masks")
+    parser.add_argument("--ckpt-path", "-c", type=str, help="path to checkpoint.ckpt")
+    parser.add_argument("--out-dir", "-o", type=str)
 
     parser.add_argument("--scene-ids", nargs="+", type=int, default=None)
     
