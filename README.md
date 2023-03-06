@@ -1,6 +1,6 @@
 # Detecting Oncoming Vehicles at Night in Urban Scenarios - An Annotation Proof-Of-Concept
 
-This repository will contains the code for the paper "Detecting Oncoming Vehicles at Night in Urban Scenarios - An Annotation Proof-Of-Concept".
+This repository contains the code for the paper "Detecting Oncoming Vehicles at Night in Urban Scenarios - An Annotation Proof-Of-Concept".
 
 ![](method_figure.png)
 
